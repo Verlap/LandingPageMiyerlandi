@@ -15,7 +15,7 @@
 }
 
 body {
-	background-color: #171717;
+	background-color: var(--white);
 }
 
 /* Estilo del header */
@@ -37,18 +37,143 @@ main #Banner img {
 	width: 100%;
 }
 
-section {
-	height: 50vh;
+main section {
 	width: 100%;
+	padding: 3rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	background-color: var(--white);
+	color: var(--black)
 }
-section div {
-	height: 100px;
-	width: 100px;
-	background-color: #1419e9;
+#KnowMe, #FormDescription, #Video, #FormRegistry {
+	margin: 2rem 0;
+	max-width: 47%;
+}
+#Video, #FormRegistry{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Video iframe{
+	width: calc(50vw - 4rem);
+	height: calc(26vw);
+	border-radius: 32px;
+}
+#KnowMe{
+	display: flex;
+	flex-direction: column;
+}
+
+#KnowMe h3{
+	font-family: "TitlingGothic";
+	font-weight: Bold;
+	font-size: 32px;
+	text-align: left;
+	white-space: pre-line;
+	width: fit-content;
+	padding-bottom: 2px;
+	color: var(--blue);
+	border-bottom: 4px solid var(--pink);
+}
+#KnowMe p{
+	font-size: 16px;
+	font-family: "TitlingGothic";
+	font-weight: Normal;
+	line-height: 26px;
+	padding: 8px 0;
+}
+#KnowMe img{
+	width: 40%;
+	align-self: flex-end;
+	padding-top: 16px;
+}
+
+#FormRegistry{
+	background-color: var(--yellow);
+	width: 100%;
+	padding: 24px;
+	border-radius: 30px;
+}
+
+#FormRegistry form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+#FormRegistry .form-group{
+	display: flex;
+	flex-direction: column;
+	width: 47%;
+	margin-bottom: 24px;
+}
+
+#FormRegistry label,#FormRegistry input{
+	font-family: "TitlingGothic";
+}
+
+#FormRegistry input{
+	border: none;
+	border-radius: 17px;
+	height: 35px;
+	width: 100%;
+	color: hsla(0, 0%, 9%, 0.6);
+	padding: 0 1rem;
+}
+
+#FormRegistry input:focus, #FormRegistry input:active{
+	border: aqua;
+	outline: none;
+}
+
+
+#FormRegistry label{
+	font-size: 16px;
+	font-weight: Normal;
+	margin-bottom: 12px;
+}
+
+#FormRegistry p{
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#FormRegistry input[type=checkbox]{
+	height: 20px;
+	border-radius: 50%;
+}
+
+#FormRegistry .checkContainer{
+	display: flex;
+	flex-direction: row;
+	font-family: "TitlingGothic";
+	font-size: 14px;
+}
+
+#FormDescription{
+	font-family: "TitlingGothic";
+}
+
+#FormDescription h3{
+	font-size: 32px;
+	color: var(--pink);
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+
+#FormDescription h4{
+	font-size: 24px;
+	font-weight: normal;
+	color: var(--blue);
+	margin-bottom: 32px;
+}
+
+#FormDescription p{
+	line-height: 26px;
 }
 
 /* Estilo del Footer */
@@ -67,3 +192,35 @@ footer #Copyright {
 	font-weight: Normal;
 	padding: 0 1rem;
 }
+footer #SocialNetwork .social{
+	padding: 0 0.2rem;
+}
+
+
+/* Estilo para pantalals pequeñas y dispositivos moviles */
+
+@media (max-width: 1024px){
+	main section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#KnowMe, #FormDescription, #Video, #FormRegistry {
+		margin: 2rem 0;
+		max-width: 100%;
+	}
+	#Video iframe{
+		width: calc(100vw - 4rem);
+		height: calc(50vw);
+		border-radius: 32px;
+	}
+	footer #Copyright {
+		font-size: 0.6rem;
+		padding: 0 1rem;
+	}
+	footer #SocialNetwork .social img{
+		width: 16px;
+	}
+}
+
