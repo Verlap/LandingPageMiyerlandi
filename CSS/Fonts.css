@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "TitlingGothic";
+	src: url("../Assets/Fonts/TitlingGothicFBBold.otf");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "TitlingGothic";
+	src: url("../Assets/Fonts/TitlingGothicFBNormal.otf");
+	font-weight: normal;
+}

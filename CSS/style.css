@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--blue: #1419e9;
+	--pink: #ff33bb;
+	--yellow: #f4df1e;
+	--green: #7dd85b;
+	--skin: #ff886c;
+	--black: #171717;
+	--white: #ffffff;
+}
+
+body {
+	background-color: #171717;
+}
+
+/* Estilo del header */
+header {
+	height: 7rem;
+	width: 100%;
+	background-color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header #HeaderLogo img {
+	height: 4rem;
+}
+
+/* Estilo del main */
+main #Banner img {
+	width: 100%;
+}
+
+section {
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--white);
+}
+section div {
+	height: 100px;
+	width: 100px;
+	background-color: #1419e9;
+}
+
+/* Estilo del Footer */
+footer {
+	background-color: var(--pink);
+	height: 5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer #Copyright {
+	color: var(--white);
+	font-size: 1rem;
+	font-family: "TitlingGothic";
+	font-weight: Normal;
+	padding: 0 1rem;
+}
