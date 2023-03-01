@@ -21,7 +21,7 @@
 			</div>
 		</header>
 		<main>
-			<div id="Banner">
+			<div id="Banner" onclick="redirectForm()">
 				<img
 					src="Assets/MiyerlandiBrand/BannerMiyerlandi.jpg"
 					alt="Banner web de Miyerlandi" />
@@ -40,39 +40,20 @@
 				</div>
 			</section>
 			<section>
-				<div id="FormRegistry">
-					<form action="#" method="post">
-						<div class="form-group">
-							<label for="nameInput">Nombre</label>
-							<input type="text" id="nameInput">
-						</div>
-						<div class="form-group">
-							<label for="lastNameInput">Apellido</label>
-							<input type="text" id="lastNameInput">
-						</div>
-						<div class="form-group">
-							<label for="emailInput">Correo electrónico</label>
-							<input type="email" id="emailInput">
-						</div>
-						<div class="form-group">
-							<label for="phoneInput">Número de teléfono</label>
-							<input type="number" id="phoneInput">
-						</div>
-							<p>*En cumplimiento de Ia Ley 1581 de 2012, que desarrolla el derecho de habeas data,
-							solicitamos su autorizacion para que el Movimiento Un Renacer Para Cali, que avala la
-							Candidatura de Miyerlandi a la alcaldia de Santiago de Cali, en calidad de responsable del
-							tratamiento pueda recopilar, almacenar, archivar, copiar, analizar los datos diligenciados:</p>
-							<div class="checkContainer">
-								<input type="checkbox" id="acceptCheck" value="acceptCheck"><span>Acepto</span>
-							</div>
-							
+				<div id="Carrousel">
+					<div id="back" ><b><</b></div>
+					<div id="next" ><b>></b></div>
+					<div id="image"></div>
 				</div>
 				<div id="FormDescription">
-					<h3>Inscripción de Voluntarios</h3>
-					<h4>Construyamos juntos <b>#UnRenacerParaCali</b></h4>
-					<p>Bienvenido/a, estamos felices de que quieras hacer parte del grupo de ciudadanos voluntarios que acompañarán a Miyerlandi en su camino a la alcaldía.</p>
-					<p><b>Por favor ingresa tus datos de contacto <br>
-					y pronto nos  comunicaremos contigo.</b></p>
+					
+					
+				<p><b>Es el sueño de un grupo de ciudadanos que trabajamos todos los días por construir, de manera participativa e incluyente, una mejor ciudad.</b></p>
+				<br>
+				<p>Tenemos como objetivo la consolidación de un proyecto de ciudad segura, cívica, sostenible e innovadora, en la que propios y visitantes podamos disfrutar de la oferta deportiva, gastronómica, cultural y ambiental que ofrece nuestra Sucursal del Cielo en sus zonas urbana y rural. Creemos que todos estos sueños son posibles si Miyerlandi, una mujer de resultados, berraca y trabajadora es elegida Alcaldesa de Santiago de Cali.
+				</p>
+				<br>
+				<h4>Construyamos juntos <b>#UnRenacerParaCali</b></h4>
 				</div>
 			</section>
 		</main>
@@ -100,5 +81,12 @@
 				</a>
 			</div>
 		</footer>
+
+		<script src="JS/carrouselImage.js"></script>
+		<script>
+			function redirectForm(){
+				location.href = "volunteerSignUp.php";
+			}
+		</script>
 	</body>
 </html>

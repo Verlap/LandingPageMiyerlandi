@@ -46,11 +46,11 @@ main section {
 	background-color: var(--white);
 	color: var(--black)
 }
-#KnowMe, #FormDescription, #Video, #FormRegistry {
+#KnowMe, #FormDescription, #Video, #Carrousel {
 	margin: 2rem 0;
 	max-width: 47%;
 }
-#Video, #FormRegistry{
+#Video, #Carrousel{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -90,69 +90,45 @@ main section {
 	padding-top: 16px;
 }
 
-#FormRegistry{
-	background-color: var(--yellow);
+#Carrousel{
+	background-color: var(--black);
 	width: 100%;
-	padding: 24px;
-	border-radius: 30px;
+	height: 60vh;
+	position: relative;
+	overflow: hidden;
 }
 
-#FormRegistry form{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-}
-#FormRegistry .form-group{
-	display: flex;
-	flex-direction: column;
-	width: 47%;
-	margin-bottom: 24px;
-}
-
-#FormRegistry label,#FormRegistry input{
-	font-family: "TitlingGothic";
-}
-
-#FormRegistry input{
-	border: none;
-	border-radius: 17px;
-	height: 35px;
+#Carrousel #image{
 	width: 100%;
-	color: hsla(0, 0%, 9%, 0.6);
-	padding: 0 1rem;
+    height: 100%;
+    background-size: cover;
+}
+#next, #back{
+	color: var(--white);
+	opacity: 0.6;
+	font-size: 64px;
+	position: absolute;
+	transition: opacity .2s;
+	transition-timing-function: ease-out;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#next:hover, #back:hover{
+	opacity: 1;
+	cursor: pointer;
 }
 
-#FormRegistry input:focus, #FormRegistry input:active{
-	border: aqua;
-	outline: none;
+#next{
+	right: 20px;
+}
+#back{
+	left: 20px;
 }
 
-
-#FormRegistry label{
-	font-size: 16px;
-	font-weight: Normal;
-	margin-bottom: 12px;
-}
-
-#FormRegistry p{
-	font-family: Arial;
-	font-size: 12px;
-	line-height: 16px;
-}
-
-#FormRegistry input[type=checkbox]{
-	height: 20px;
-	border-radius: 50%;
-}
-
-#FormRegistry .checkContainer{
-	display: flex;
-	flex-direction: row;
-	font-family: "TitlingGothic";
-	font-size: 14px;
-}
 
 #FormDescription{
 	font-family: "TitlingGothic";
@@ -206,7 +182,7 @@ footer #SocialNetwork .social{
 		justify-content: space-between;
 		align-items: center;
 	}
-	#KnowMe, #FormDescription, #Video, #FormRegistry {
+	#KnowMe, #FormDescription, #Video, #Carrousel {
 		margin: 2rem 0;
 		max-width: 100%;
 	}
