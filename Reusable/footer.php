@@ -30,11 +30,5 @@
                 src="Assets/SocialNetwork/YouTubeLogoWhite.svg"
                 alt="Youtube de Miyerlandi" />
         </a>
-        <a href="https://www.linkedin.com/in/miyerlandi-torres-agredo/" class="social" target="_blank">
-            <img
-                src="Assets/SocialNetwork/LinkedInLogoWhite.svg"
-                alt="LinkedIn de Miyerlandi" />
-        </a>
-        
     </div>
 </footer>
