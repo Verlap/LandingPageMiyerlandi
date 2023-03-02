@@ -8,18 +8,20 @@
 		<!-- Estilos de la pagina -->
 		<link rel="stylesheet" href="CSS/style.css" />
 		<link rel="stylesheet" href="CSS/Fonts.css" />
+		<link rel="stylesheet" href="CSS/main.css">
+
+		<!-- Fuentes externas -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
 		<!-- JS de la pagina -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	</head>
 	<body>
-		<header>
-			<div id="HeaderLogo">
-				<img
-					src="Assets/MiyerlandiBrand/LogotypeColor.svg"
-					alt="Logotipo de Miyerlandi" />
-			</div>
-		</header>
+		<?php
+			include_once("Reusable/header.php");
+		?>
 		<main>
 			<div id="Banner" onclick="redirectForm()">
 				<img
@@ -57,31 +59,9 @@
 				</div>
 			</section>
 		</main>
-		<footer>
-			<div id="Copyright">
-				<p>
-					Diseñado por: Equipo de mercado Miyerlandi - Desarrollado por: Proveedor - COPYRIGHT &copy; 2023
-				</p>
-			</div>
-			<div id="SocialNetwork">
-				<a href="https://www.facebook.com/MiyerTorresA" class="social" target="_blank">
-					<img
-						src="Assets/SocialNetwork/FacebookLogoWhite.svg"
-						alt="Facebook de Miyerlandi" />
-				</a>
-				<a href="https://twitter.com/MiyerTorresA" class="social" target="_blank">
-					<img
-						src="Assets/SocialNetwork/TwitterLogoWhite.svg"
-						alt="Twitter de Miyerlandi" />
-				</a>
-				<a href="https://www.instagram.com/miyertorresa/" class="social" target="_blank">
-					<img
-						src="Assets/SocialNetwork/InstagramLogoWhite.svg"
-						alt="Instagram de Miyerlandi" />
-				</a>
-			</div>
-		</footer>
-
+		<?php
+			include_once("Reusable/footer.php");
+		?>
 		<script src="JS/carrouselImage.js"></script>
 		<script>
 			function redirectForm(){

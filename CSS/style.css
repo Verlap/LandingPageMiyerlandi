@@ -1,202 +1,66 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-	--blue: #1419e9;
-	--pink: #ff33bb;
-	--yellow: #f4df1e;
-	--green: #7dd85b;
-	--skin: #ff886c;
-	--black: #171717;
-	--white: #ffffff;
+  --blue: #1419e9;
+  --pink: #ff33bb;
+  --yellow: #f4df1e;
+  --green: #7dd85b;
+  --skin: #ff886c;
+  --black: #171717;
+  --white: #ffffff;
 }
 
 body {
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 /* Estilo del header */
 header {
-	height: 7rem;
-	width: 100%;
-	background-color: var(--white);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  height: 7rem;
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header #HeaderLogo img {
-	height: 4rem;
-}
-
-/* Estilo del main */
-main #Banner img {
-	width: 100%;
-}
-
-main section {
-	width: 100%;
-	padding: 3rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--white);
-	color: var(--black)
-}
-#KnowMe, #FormDescription, #Video, #Carrousel {
-	margin: 2rem 0;
-	max-width: 47%;
-}
-#Video, #Carrousel{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#Video iframe{
-	width: calc(50vw - 4rem);
-	height: calc(26vw);
-	border-radius: 32px;
-}
-#KnowMe{
-	display: flex;
-	flex-direction: column;
-}
-
-#KnowMe h3{
-	font-family: "TitlingGothic";
-	font-weight: Bold;
-	font-size: 32px;
-	text-align: left;
-	white-space: pre-line;
-	width: fit-content;
-	padding-bottom: 2px;
-	color: var(--blue);
-	border-bottom: 4px solid var(--pink);
-}
-#KnowMe p{
-	font-size: 16px;
-	font-family: "TitlingGothic";
-	font-weight: Normal;
-	line-height: 26px;
-	padding: 8px 0;
-}
-#KnowMe img{
-	width: 40%;
-	align-self: flex-end;
-	padding-top: 16px;
-}
-
-#Carrousel{
-	background-color: var(--black);
-	width: 100%;
-	height: 60vh;
-	position: relative;
-	overflow: hidden;
-}
-
-#Carrousel #image{
-	width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#next, #back{
-	color: var(--white);
-	opacity: 0.6;
-	font-size: 64px;
-	position: absolute;
-	transition: opacity .2s;
-	transition-timing-function: ease-out;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-#next:hover, #back:hover{
-	opacity: 1;
-	cursor: pointer;
-}
-
-#next{
-	right: 20px;
-}
-#back{
-	left: 20px;
-}
-
-
-#FormDescription{
-	font-family: "TitlingGothic";
-}
-
-#FormDescription h3{
-	font-size: 32px;
-	color: var(--pink);
-	margin-bottom: 24px;
-	font-weight: bold;
-}
-
-#FormDescription h4{
-	font-size: 24px;
-	font-weight: normal;
-	color: var(--blue);
-	margin-bottom: 32px;
-}
-
-#FormDescription p{
-	line-height: 26px;
+  height: 4rem;
 }
 
 /* Estilo del Footer */
 footer {
-	background-color: var(--pink);
-	height: 5rem;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: var(--pink);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer #Copyright {
-	color: var(--white);
-	font-size: 1rem;
-	font-family: "TitlingGothic";
-	font-weight: Normal;
-	padding: 0 1rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-family: "TitlingGothic";
+  font-weight: Normal;
+  padding: 0 1rem;
 }
-footer #SocialNetwork .social{
-	padding: 0 0.2rem;
+footer #SocialNetwork .social {
+  padding: 0 0.2rem;
+  text-decoration: none;
 }
-
 
 /* Estilo para pantalals pequeñas y dispositivos moviles */
 
-@media (max-width: 1024px){
-	main section {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-	}
-	#KnowMe, #FormDescription, #Video, #Carrousel {
-		margin: 2rem 0;
-		max-width: 100%;
-	}
-	#Video iframe{
-		width: calc(100vw - 4rem);
-		height: calc(50vw);
-		border-radius: 32px;
-	}
-	footer #Copyright {
-		font-size: 0.6rem;
-		padding: 0 1rem;
-	}
-	footer #SocialNetwork .social img{
-		width: 16px;
-	}
+@media (max-width: 1024px) {
+  footer #Copyright {
+    font-size: 0.6rem;
+    padding: 0 1rem;
+  }
+  footer #SocialNetwork .social img {
+    width: 16px;
+  }
 }
-
