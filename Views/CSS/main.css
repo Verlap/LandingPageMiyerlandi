@@ -1,138 +1,152 @@
 /* Estilo del main */
 main #Banner img {
-	width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
 
 main section {
-	width: 100%;
-	padding: 3rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--white);
-	color: var(--black)
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--black);
 }
-#KnowMe, #FormDescription, #Video, #Carrousel {
-	margin: 2rem 0;
-	max-width: 47%;
+#KnowMe,
+#FormDescription,
+#Video,
+#Carrousel {
+  margin: 2rem 0;
+  max-width: 47%;
 }
-#Video, #Carrousel{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#Video iframe{
-	width: calc(50vw - 4rem);
-	height: calc(26vw);
-	border-radius: 32px;
-}
-#KnowMe{
-	display: flex;
-	flex-direction: column;
+#Video,
+#Carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#KnowMe h3{
-	font-family: "TitlingGothic";
-	font-weight: Bold;
-	font-size: 32px;
-	text-align: left;
-	white-space: pre-line;
-	width: fit-content;
-	padding-bottom: 2px;
-	color: var(--blue);
-	border-bottom: 4px solid var(--pink);
+#Video iframe {
+  width: calc(50vw - 4rem);
+  height: calc(26vw);
+  border-radius: 32px;
 }
-#KnowMe p{
-	font-size: 16px;
-	font-family: "Poppins";
-	font-weight: Normal;
-	line-height: 26px;
-	padding: 8px 0;
-}
-#KnowMe img{
-	width: 40%;
-	align-self: flex-end;
-	padding-top: 16px;
+#KnowMe {
+  display: flex;
+  flex-direction: column;
 }
 
-#Carrousel{
-	background-color: var(--black);
-	width: 100%;
-	height: 60vh;
-	position: relative;
-	overflow: hidden;
+#KnowMe h3 {
+  font-family: "TitlingGothic";
+  font-weight: Bold;
+  font-size: 32px;
+  text-align: left;
+  white-space: pre-line;
+  width: fit-content;
+  padding-bottom: 2px;
+  color: var(--blue);
+  border-bottom: 4px solid var(--pink);
+}
+#KnowMe p {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: Normal;
+  line-height: 26px;
+  padding: 8px 0;
+}
+#KnowMe img {
+  width: 40%;
+  align-self: flex-end;
+  padding-top: 16px;
 }
 
-#Carrousel #image{
-	width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#next, #back{
-	color: var(--white);
-	opacity: 0.6;
-	font-size: 64px;
-	position: absolute;
-	transition: opacity .2s;
-	transition-timing-function: ease-out;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-#next:hover, #back:hover{
-	opacity: 1;
-	cursor: pointer;
+#Carrousel {
+  background-color: var(--black);
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
 }
 
-#next{
-	right: 20px;
+#Carrousel #image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
-#back{
-	left: 20px;
+#next,
+#back {
+  color: var(--white);
+  opacity: 0.6;
+  font-size: 64px;
+  position: absolute;
+  transition: opacity 0.2s;
+  transition-timing-function: ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-
-#FormDescription{
-	font-family: "Poppins";
-}
-
-#FormDescription h3{
-	font-size: 32px;
-	color: var(--pink);
-	margin-bottom: 24px;
-	font-weight: bold;
-}
-
-#FormDescription h4{
-	font-size: 24px;
-	font-weight: normal;
-	color: var(--blue);
-	margin-bottom: 32px;
-}
-
-#FormDescription p{
-	line-height: 26px;
+#next:hover,
+#back:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-@media (max-width: 1024px){
-	main section {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-	}
-	#KnowMe, #FormDescription, #Video, #Carrousel {
-		margin: 2rem 0;
-		max-width: 100%;
-	}
-	#Video iframe{
-		width: calc(100vw - 4rem);
-		height: calc(50vw);
-		border-radius: 32px;
-	}
+#next {
+  right: 20px;
+}
+#back {
+  left: 20px;
+}
+
+#FormDescription {
+  font-family: "Poppins";
+}
+
+#FormDescription h3 {
+  font-size: 32px;
+  color: var(--pink);
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+#FormDescription h4 {
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--blue);
+  margin-bottom: 32px;
+}
+
+#FormDescription p {
+  line-height: 26px;
+}
+
+#location {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #KnowMe,
+  #FormDescription,
+  #Video,
+  #Carrousel {
+    margin: 2rem 0;
+    max-width: 100%;
+  }
+  #Video iframe {
+    width: calc(100vw - 4rem);
+    height: calc(50vw);
+    border-radius: 32px;
+  }
 }

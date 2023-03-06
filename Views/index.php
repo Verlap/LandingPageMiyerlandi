@@ -58,6 +58,13 @@
 				<h4>Construyamos juntos <b>#UnRenacerParaCali</b></h4>
 				</div>
 			</section>
+			<section>
+				<a href="https://goo.gl/maps/bygu62yuLKTQV9CB9" target="_blank">
+					<img src="Assets/MiyerlandiBrand/Location.jpg" alt="Sede presencial de Miyerlandi" id="location">
+				</a>
+			</section>
+				
+			
 		</main>
 		<?php
 			include_once("Reusable/footer.php");
